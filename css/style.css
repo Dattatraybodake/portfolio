@@ -1,0 +1,100 @@
+
+.nav-link
+{
+  margin-top: 5px;
+  font-size: 18px;
+  color: black;
+}
+  .bg-secondary {
+  background-color: #ffb524 !important;
+}
+
+header {
+  background: #007acc;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #0d6efd;
+  }
+
+  .timeline-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+  }
+
+  .timeline-icon {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.5rem;
+    width: 16px;
+    height: 16px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .timeline-item:hover
+    {
+  	box-shadow: 0 0 10px 3px blue;
+    transform: scale(1.02);
+  	transition: all 0.3s ease-in-out;
+    }
+
+.icon
+{
+  width: 48px;
+  height: 48px;
+}
+
+
+  
+
+  @media (min-width: 768px) {
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.timeline {
+  padding-left: 0;
+}
+
+.timeline::before {
+  display: none;
+}
+
+.timeline-item {
+  padding-left: 0;
+}
+
+.timeline-icon {
+  display: none;
+}
+}

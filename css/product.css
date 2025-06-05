@@ -1,0 +1,231 @@
+/*======================
+    main Page
+========================*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2
+{
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #343a40;
+    font-size: 4rem;
+    line-height: 5.5rem;
+}
+a {
+    color: #2196f3;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #0f72c1;
+}
+.subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+}
+
+/*==================================================
+                  BUTTON (Generic)
+====================================================*/
+
+.btn
+{
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-color: #2196f3;
+    color: #2196f3;
+}
+
+.btn-white {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: transparent;
+    color: #2196f3;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*==================================================
+Certificate
+====================================================*/
+
+.certificate-item:hover
+{
+  	border: 1px solid black;
+  	box-shadow: 0 0 10px 3px red;
+  	/*Applyshadoweffectonboxesinservice*/transform: scale(1.02);
+  	transition: all 0.3s ease-in-out;
+  	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+}
+
+
+/*==================================================
+    Product
+====================================================*/
+#product * {
+    z-index: 2;
+}
+
+@media only screen and (max-width: 576px) 
+    {
+    #product .certificate-item {
+        margin-top: 10px;
+    }
+   .col
+   {
+    margin: 20px 0px ;
+   }
+   h2
+   {
+    font-size: 4rem;
+   }
+}
+
+@media only screen and (max-width: 398px) 
+{
+   h2
+   {
+    font-size: 3rem;
+   }
+}
+
+
+
+/*==================================================
+                  Product Model
+====================================================*/
+
+
+.product-modal .modal-dialog {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.product-modal .title-bar
+{
+    padding: 0 0 50px 0;
+}
+.product-modal .title-bar h1
+{
+    visibility: initial;
+    animation-name: initial;    
+}
+
+
+.product-modal .modal-dialog .modal-content {
+    padding: 10px 0 100px 0;
+    border: 0;
+    border-radius: 0;
+} 
+
+.product-modal .modal-dialog .modal-content img {
+    margin-bottom: 30px;
+}
+
+.product-modal .modal-dialog .modal-content .item-details {
+    margin: 30px 0;
+}
+ 
+.product-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.product-modal .close-modal:hover {
+    opacity: 0.3;
+}
+
+.product-modal .close-modal .lr {
+    /* Safari and Chrome */
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #2C3E50;
+}
+
+.product-modal .close-modal .lr .rl {
+    /* Safari and Chrome */
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: #2C3E50;
+}
+
+.product-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+@media (max-width: 850px){
+    .product-modal .close-modal{
+        display: none;
+    }
+}  
+
+
+.product-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
